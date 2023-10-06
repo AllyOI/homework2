@@ -7,10 +7,10 @@
 class Wheel {
 public:
     Wheel(int minVal = 1, int maxVal = 10);
-    int spin();
+    virtual int spin();
     void changeRange(int newMin, int newMax);
 
-private:
+protected:
     int minVal;
     int maxVal;
 };
